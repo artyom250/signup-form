@@ -1,4 +1,4 @@
-[Image of the project]([./images/final.png])
+![Example Image](./images/final.png)
 
 ## Signup Form
 
