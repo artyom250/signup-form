@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <form>
+        <div class="main">
+            <p class="head">Get Started Now</p>
+            <p class="subhead" style="color: #d4d4d4;">Enter your credentials to access your account</p>
+
+            <!-- Google & Apple authentication -->
+            <div class="auth">
+
+                <!-- Google -->
+                <a href="index.html">
+                    <img src="./images/google.png" alt="google" style="width: 20px;">
+                    <p style="font-size: 14px; font-weight: 300; color: #d4d4d4;">Log In with Google</p>
+                </a>
+
+                <!-- Apple -->
+                <a href="index.html">
+                    <img src="./images/apple.png" alt="apple" style="width: 20px; filter: invert(1);">
+                    <p style="font-size: 14px; font-weight: 300; color: #d4d4d4;">Log In with Apple</p>
+                </a>
+            </div>
+
+            <!-- Split sections -->
+            <div class="split" style="
+                display: flex; 
+                align-items: center; 
+                gap: 15px; 
+                margin: 30px 0px;
+            ">
+                <div class="line"></div>
+                <p style="color: #a3a3a3;">or</p>
+                <div class="line"></div>
+            </div>
+
+            <!-- Inputs -->
+            <div class="inputs">
+
+                <!-- Email -->
+                <div>
+                    <p style="color: #d4d4d4;">Email address</p>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Username -->
+                <div>
+                    <p style="color: #d4d4d4;">Username</p>
+                    <input type="text" placeholder="What's your nick?" required>
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <p style="color: #d4d4d4;">Password</p>
+                    <input type="password" placeholder="Min 8 chars" minlength="8"  required>
+                </div>
+
+                <!-- Checkbox -->
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div class="check">
+                        <input type="checkbox" onclick="checkFunc()" required>
+                        <i class='bx bx-check' id="check"></i>
+                    </div>
+                    <p style="color: #d4d4d4;">
+                        I agree to the 
+                        <a href="index.html" style="color: #3b82f6; text-decoration: underline;">Terms & Privacy</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit">
+                <i class='bx bx-bolt-circle' style="font-size: 24px;"></i>
+                <p>Register</p>
+            </button>
+
+            <!-- Sign in link -->
+            <center>
+                <p style="color: #d4d4d4;">
+                    Already a memeber?  
+                    <a href="index.html" style="color: #3b82f6; text-decoration: underline;">Sign In</a>
+                </p>
+            </center>
+        </div>
+    </form>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
